@@ -210,13 +210,13 @@ template {
 }
 
 ::-moz-selection {
-  color: pink;
-  background-color: red;
+  color: var(--clean-color);
+  background-color: var(--second-color);
 }
 
 ::selection {
-  color: pink;
-  background-color: red;
+  color: var(--clean-color);
+  background-color: var(--second-color);
 }
 
 body {
@@ -226,10 +226,6 @@ body {
   display: flex;
   flex-direction: column;
   color: var(--text-color);
-}
-
-div {
-  display: block;
 }
 
 a {
@@ -263,6 +259,10 @@ h3 + .subtitle, h4 + .subtitle,
 h5 + .subtitle, h6 + .subtitle {
   margin-top: -.5rem;
   margin-bottom: 1rem;
+}
+
+h2 + .block-content {
+  margin-top: 50px;
 }
 
 .block-title {
@@ -317,12 +317,29 @@ input {
   line-height: 1.7;
 }
 
+@media (min-width: 1024px) {
+  .ed-item.l-50, .l-50 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1340px) {
+  .ed-item.m-80, .m-80 {
+    width: 90%;
+  }
+}
+
+.paragraph {
+  font-size: .875rem;
+  margin-bottom: 1rem;
+}
+
 .button,
 [class^="button"] {
   background-color: var(--first-color);
   color: var(--clean-color);
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 5px;
   font-size: .95rem;
   padding: 12px 23px;
   text-align: center;
@@ -465,7 +482,7 @@ input {
 .main-banner--front {
   padding-top: 11rem;
   padding-bottom: 13rem;
-  background-color: var(--accent-color-alt);
+  background-color: var(--dark-color);
 }
 
 .main-banner__img {
@@ -499,7 +516,7 @@ input {
   display: block;
   width: 100%;
   padding: .5em 3em .5em .7em;
-  border-radius: .2rem .2rem 0 0;
+  border-radius: .35rem;
   border-bottom: 1px solid var(--border-color);
   margin-bottom: 2rem;
   background: var(--clean-color) url(https://image.flaticon.com/icons/svg/45/45301.svg) no-repeat center right 12px/1.5rem;
@@ -521,4 +538,41 @@ input {
 
 .views-element-container > div {
   width: 100%;
+}
+
+.layout {
+  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lay-img img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .lay-img img {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box-descrip {
+    width: 400px;
+  }
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
+}
+
+.paragraph + a {
+  margin-top: 20px;
 }

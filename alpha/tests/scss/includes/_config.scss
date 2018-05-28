@@ -11,8 +11,8 @@
 }
 
 ::selection {
-  color: pink;
-  background-color: red;
+  color: var(--clean-color);
+  background-color: var(--second-color);
 }
 
 body {
@@ -22,10 +22,6 @@ body {
   display: flex;
   flex-direction: column;
   color: var(--text-color);
-}
-
-div {
-  display: block;
 }
 
 a {
@@ -60,6 +56,10 @@ h3+.subtitle, h4+.subtitle,
 h5+.subtitle, h6+.subtitle {
   margin-top: -.5rem;
   margin-bottom: 1rem;
+}
+
+h2 + .block-content {
+  margin-top: 50px;
 }
 
 .block-title {
@@ -112,4 +112,25 @@ h5+.subtitle, h6+.subtitle {
 
 input {
   line-height: 1.7;
+}
+
+@media (min-width: 1024px) {
+
+  .ed-item.l-50, .l-50 {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 1340px) {
+
+  .ed-item.m-80, .m-80 {
+    width: 90%;
+  }
+
+}
+
+.paragraph {
+  font-size: .875rem;
+  margin-bottom: 1rem;
 }

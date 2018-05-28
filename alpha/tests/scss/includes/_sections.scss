@@ -10,5 +10,57 @@
 // TODO: Nueva característica para el layout final en pruebas
 
 .layout {
+  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lay-img img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+
+  .lay-img img {
+    margin-bottom: 1rem;
+  }
 
 }
+
+@media (min-width: 1024px) {
+
+  .box-descrip {
+    //padding-left: 75px;
+    //padding-right: 75px;
+  }
+
+  .box-descrip {
+    width: 400px;
+  }
+
+  .order-1 {
+    order: 1;
+  }
+
+  .order-2 {
+    order: 2;
+  }
+
+}
+
+.paragraph + a {
+  margin-top: 20px;
+}
+
+//.order-1 {
+//  order: 1;
+//}
+
+//.order-2 {
+//  order: 2;
+//}
