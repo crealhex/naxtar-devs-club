@@ -532,15 +532,7 @@ input {
   margin-bottom: 2rem;
 }
 
-.views-element-container {
-  position: relative;
-}
-
-.views-element-container > div {
-  width: 100%;
-}
-
-.layout {
+.sector {
   margin-bottom: 4rem;
   margin-left: auto;
   margin-right: auto;
@@ -549,20 +541,20 @@ input {
   flex-wrap: wrap;
 }
 
-.lay-img img {
+.sector__img img {
   border-radius: 5px;
   max-width: 100%;
   height: auto;
 }
 
 @media (max-width: 1024px) {
-  .lay-img img {
+  .sector__img img {
     margin-bottom: 1rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .box-descrip {
+  .s-data__description {
     width: 400px;
   }
   .order-1 {

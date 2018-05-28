@@ -1,15 +1,12 @@
-.views-element-container {
-  //width: 100%;
-  position: relative;
-}
+//.views-element-container {
+//  position: relative;
+//}
+//
+//.views-element-container > div {
+//  width: 100%;
+//}
 
-.views-element-container > div {
-  width: 100%;
-}
-
-// TODO: Nueva característica para el layout final en pruebas
-
-.layout {
+.sector {
   margin-bottom: 4rem;
   margin-left: auto;
   margin-right: auto;
@@ -18,7 +15,7 @@
   flex-wrap: wrap;
 }
 
-.lay-img img {
+.sector__img img {
   border-radius: 5px;
   max-width: 100%;
   height: auto;
@@ -26,7 +23,7 @@
 
 @media (max-width: 1024px) {
 
-  .lay-img img {
+  .sector__img img {
     margin-bottom: 1rem;
   }
 
@@ -34,12 +31,7 @@
 
 @media (min-width: 1024px) {
 
-  .box-descrip {
-    //padding-left: 75px;
-    //padding-right: 75px;
-  }
-
-  .box-descrip {
+  .s-data__description {
     width: 400px;
   }
 
@@ -56,11 +48,3 @@
 .paragraph + a {
   margin-top: 20px;
 }
-
-//.order-1 {
-//  order: 1;
-//}
-
-//.order-2 {
-//  order: 2;
-//}
