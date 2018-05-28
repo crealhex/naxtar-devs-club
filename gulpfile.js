@@ -14,5 +14,5 @@ gulp.task('sass', ()=>
 );
 
 gulp.task('default', ()=> {
-    gulp.watch('./alpha/tests/scss/**/*.scss', ['sass'])
+    gulp.watch('./**/**.scss', ['sass'])
 });

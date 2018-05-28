@@ -1,0 +1,34 @@
+$cleanColor: #FFF;
+$firstColor: #FB4C54;
+$firstColorAlt: #E53B43;
+$secondColor: #40C67B;
+$secondColorAlt: #00BF3D;
+$darkColor: #2E2C2C;
+$darkColorAlt: #0E0E0E;
+$accentColor: #F97939;
+$accentColorAlt: #F78921;
+$bodyBG: #F9F9F9;
+$borderColor: #CFCFCF;
+
+:root {
+  --header-height: 3.5rem;
+  --max-width: 1344px;
+  --gutter: 1rem;
+  --clean-color: #FFF;
+  --first-color: #FB4C54;
+  --first-color-alt: #E53B43;
+  --second-color: #40C67B;
+  --second-color-alt: #00BF3D;
+  --dark-color: #2E2C2C;
+  --dark-color-alt: #0E0E0E;
+  --accent-color: #F97939;
+  --accent-color-alt: #F78921;
+  --body-bg: #F9F9F9;
+  --border-color: #CFCFCF;
+  --text-color: #53575A;
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}

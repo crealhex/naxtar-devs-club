@@ -1,5 +1,5 @@
-$color: red;
-
-div {
-  color: $color;
-}
+@import "includes/variables";
+@import "includes/normalize";
+@import "includes/config";
+@import "includes/header";
+@import "includes/buttons";
