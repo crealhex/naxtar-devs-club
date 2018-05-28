@@ -1,0 +1,73 @@
+.main-banner {
+  position: relative;
+  color: var(--clean-color);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  margin-bottom: 4rem;
+}
+
+.main-banner--front {
+  padding-top: 11rem;
+  padding-bottom: 13rem;
+  background-color: var(--accent-color-alt);
+}
+
+.main-banner__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .1;
+}
+
+.main-banner__data {
+  position: relative;
+  text-align: center;
+}
+
+.main-banner .subtitle {
+  opacity: .6;
+}
+
+.nd-item {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.nd-item.l-75 {
+  width: 75%;
+}
+
+.to-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+input {
+  line-height: 1.7;
+}
+
+.main-banner .main-search-input {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+}
+
+.main-search-input {
+  border: none;
+  display: block;
+  width: 100%;
+  padding: .5em 3em .5em .7em;
+  border-radius: .2rem .2rem 0 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 2rem;
+  background:
+          var(--clean-color)
+          url(https://image.flaticon.com/icons/svg/45/45301.svg)
+          no-repeat
+          center right
+          12px/1.5rem;
+  outline: none;
+}

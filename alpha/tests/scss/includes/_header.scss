@@ -1,3 +1,5 @@
+// TODO: Falta refactorizar y minificar las clases en menos selectores.
+
 .main-header {
   background-color: var(--clean-color);
   height: var(--header-height);
@@ -7,6 +9,7 @@
   border-bottom: 1px solid var(--border-color);
   display: flex;
   align-items: center;
+  z-index: var(--z-fixed);
 }
 
 .main-logo {
@@ -29,7 +32,6 @@
   width: 15%;
   display: flex;
   align-items: center;
-  //background-color: blue;
 }
 
 .main-menu {
@@ -37,7 +39,6 @@
   display: flex;
   height: var(--header-height);
   align-items: center;
-  //margin-bottom: 0;
 }
 
 .main-menu li {
@@ -62,7 +63,6 @@
 .main-end {
   width: 85%;
   height: var(--header-height);
-  //background-color: red;
   display: flex;
   justify-content: flex-end;
 }
