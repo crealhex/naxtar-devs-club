@@ -26,9 +26,9 @@
   text-align: center;
 }
 
-.main-banner .subtitle {
-  opacity: .6;
-}
+//.main-banner .subtitle {
+//  opacity: .6;
+//}
 
 .main-banner .main-search-input {
   position: relative;
@@ -47,7 +47,7 @@
   margin-bottom: 2rem;
   background:
           var(--clean-color)
-          url(https://image.flaticon.com/icons/svg/45/45301.svg)
+          url(/alpha/tests/svg/icon-search.svg)
           no-repeat
           center right
           12px/1.5rem;
