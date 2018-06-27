@@ -1,13 +1,14 @@
 .relevant.right-s {
   background:
-          url(http://via.placeholder.com/350x450)
+          url(//unsplash.it/350/450.peru)
+          //url(http://via.placeholder.com/350x450)
           no-repeat
           calc(50% + -700px) center;
 }
 
 .relevant.left-s {
   background:
-          url(http://via.placeholder.com/350x450)
+          url(//unsplash.it/350/450.virus)
           no-repeat
           calc(50% + 700px) center;
 }
@@ -54,7 +55,8 @@
 
 @media (max-width: 1100px) {
 
-  .right-s .relevant__container {
+  .right-s .relevant__container,
+  .left-s .relevant__container {
     padding: 100px 50px;
     width: auto;
     max-width: 660px;
@@ -71,10 +73,3 @@
   }
 
 }
-
-
-
-
-
-
-

@@ -203,7 +203,6 @@ template {
 *::before {
   font-family: 'Open sans', sans-serif;
   box-sizing: border-box;
-  font-size: 1rem;
   margin: 0;
   padding: 0;
   line-height: 1.4;
@@ -237,7 +236,6 @@ h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   letter-spacing: .01em;
-  line-height: 1.3;
 }
 
 h1, h2, h3,
@@ -346,6 +344,7 @@ input {
   border: 2px solid var(--first-color);
   transition: all .2s ease-out;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .coraza {
@@ -379,7 +378,6 @@ input {
 
 [class^="button"].big {
   font-size: 1.25rem;
-  padding: 20px 40px;
 }
 
 [class*="--small"] {
@@ -529,11 +527,11 @@ input {
 }
 
 .relevant.right-s {
-  background: url(http://via.placeholder.com/350x450) no-repeat calc(50% + -700px) center;
+  background: url(//unsplash.it/350/450.peru) no-repeat calc(50% + -700px) center;
 }
 
 .relevant.left-s {
-  background: url(http://via.placeholder.com/350x450) no-repeat calc(50% + 700px) center;
+  background: url(//unsplash.it/350/450.virus) no-repeat calc(50% + 700px) center;
 }
 
 .relevant {
@@ -577,7 +575,8 @@ input {
 }
 
 @media (max-width: 1100px) {
-  .right-s .relevant__container {
+  .right-s .relevant__container,
+  .left-s .relevant__container {
     padding: 100px 50px;
     width: auto;
     max-width: 660px;
@@ -591,4 +590,300 @@ input {
     margin: 25px 0;
     height: auto;
   }
+}
+
+.consoles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.feature__title {
+  font-weight: 600;
+}
+
+.feature__img {
+  margin-bottom: 20px;
+  width: 120px;
+  height: 75px;
+  background: url(https://ed.team/themes/custom/escueladigital/img/beneficios/profesores.svg) no-repeat 50%/contain;
+}
+
+.feature:nth-child(2) .feature__img {
+  background-image: url(https://ed.team/themes/custom/escueladigital/img/beneficios/desde-cero.svg);
+}
+
+.feature:nth-child(3) .feature__img {
+  background-image: url(https://ed.team/themes/custom/escueladigital/img/beneficios/proyecto-final.svg);
+}
+
+.feature:nth-child(4) .feature__img {
+  background-image: url(https://ed.team/themes/custom/escueladigital/img/beneficios/sin-mensualidades.svg);
+}
+
+.feature {
+  font-size: .8125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 13px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.fountain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.fountain__data {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.fountain__data a {
+  color: #fff;
+}
+
+.fountain .fountain__title h3 span:last-of-type {
+  position: absolute;
+  right: 0;
+  top: 35px;
+}
+
+.fountain__title span:nth-child(n) {
+  background-color: #222;
+}
+
+.fountain a img {
+  max-width: 100%;
+}
+
+.fountain__title {
+  position: absolute;
+  z-index: 0;
+  font-size: 1.5rem;
+}
+
+.top--right {
+  top: 0;
+  right: 0;
+  margin: 15px 20px;
+  text-align: right;
+}
+
+/*-----------------------------------*/
+.fountain__data.general {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.fountain__data.general > a img {
+  display: block;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.4s ease;
+}
+
+.fountain__data.general > a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: all 0.4s ease;
+}
+
+.fountain__data.general:hover > a img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.fountain__data.general:hover > a:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+h2 + .fountain {
+  margin-top: 25px;
+  margin-bottom: 6rem;
+}
+
+.main-footer {
+  background-color: #282d31;
+  padding: 50px 0;
+}
+
+.main-footer > .nd-container {
+  max-width: 1344px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+address {
+  font-style: normal;
+}
+
+.footer__data * {
+  color: rgba(252, 252, 238, 0.5);
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer__data a:hover {
+  color: var(--accent-color-alt);
+}
+
+.footer__data h3 {
+  font-size: .900rem;
+  font-weight: 700;
+  color: var(--first-color);
+  margin-bottom: 10px;
+}
+
+.footer__data ul {
+  font-size: .835rem;
+  margin-left: 1.5rem;
+  padding-left: 10px;
+  border-left: 1px solid;
+  position: relative;
+}
+
+.footer__data ul::before {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  left: -1.5rem;
+}
+
+.footer__data:first-of-type ul::before {
+  background-image: url(https://ed.team/themes/custom/escueladigital/img/world.svg);
+}
+
+.footer__data:nth-of-type(2) ul::before {
+  background-image: url(https://ed.team/themes/custom/escueladigital/img/email.svg);
+}
+
+.footer__data:nth-of-type(3) ul::before {
+  background-image: url(https://ed.team/themes/custom/escueladigital/img/users.svg);
+}
+
+.footer__data:last-of-type ul::before {
+  background-image: url(https://ed.team/themes/custom/escueladigital/img/fork.svg);
+}
+
+.rights {
+  background-color: #fff;
+  font-size: .835rem;
+}
+
+.self-item {
+  text-align: center;
+  max-width: 1344px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.video-demo {
+  background-color: #000;
+  padding: 6rem 0;
+}
+
+.wrapper-video {
+  margin-left: auto;
+  margin-right: auto;
+  width: 965px;
+}
+
+.video-container {
+  text-align: center;
+}
+
+.video {
+  text-align: center;
+}
+
+.wrapper-map iframe {
+  width: 100%;
+  height: 75vh;
+}
+
+form {
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.feedback-input {
+  color: #000;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid var(--first-color);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid var(--second-color);
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"]:hover {
+  background: var(--first-color-alt);
+}
+
+.dual-button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.dual-button input:first-child {
+  margin-right: 10px;
+}
+
+.dual-button input:last-child {
+  margin-left: 10px;
+}
+
+input + .dual-button {
+  margin-top: 1rem;
+}
+
+.solo-content {
+  margin: 0;
+  width: 100vw;
+  height: calc(100vh - 6rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
