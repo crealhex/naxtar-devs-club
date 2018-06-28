@@ -9,7 +9,7 @@ form {
 }
 
 .feedback-input {
-  color: #000;
+  color: var(--dark-color);
   font-family: 'Raleway', 'Open Sans', sans-serif;
   font-weight:500;
   font-size: 18px;
@@ -28,26 +28,10 @@ form {
 .feedback-input:focus { border:2px solid var(--second-color); }
 
 textarea {
-  height: 150px;
   line-height: 150%;
-  resize:vertical;
+  resize: vertical;
+  min-height: 150px;
 }
-
-//[type="submit"] {
-//  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-//  width: 100%;
-//  background: var(--first-color);
-//  border-radius:5px;
-//  border:0;
-//  cursor:pointer;
-//  color:white;
-//  font-size:24px;
-//  padding-top:10px;
-//  padding-bottom:10px;
-//  transition: all 0.3s;
-//  margin-top:-4px;
-//  font-weight:700;
-//}
 
 [type="submit"]:hover { background: var(--first-color-alt); }
 
@@ -80,4 +64,17 @@ input + .dual-button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.col-active {
+  flex-direction: column;
+}
+
+.form__logo {
+  width: 100%;
+  text-align: center;
+}
+
+.form__logo--hor {
+  width: 200px;
 }

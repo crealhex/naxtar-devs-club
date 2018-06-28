@@ -229,6 +229,11 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--accent-color);
+}
+
+a:hover {
+  color: var(--accent-color-alt);
 }
 
 .t2, .t3, .t4,
@@ -330,6 +335,15 @@ input {
 .paragraph {
   font-size: .875rem;
   margin-bottom: 1rem;
+}
+
+.particle-block {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.particle-block--final {
+  margin-bottom: 6rem;
 }
 
 .button,
@@ -479,7 +493,7 @@ input {
 
 .main-banner--front {
   padding-top: 11rem;
-  padding-bottom: 13rem;
+  padding-bottom: 11rem;
   background-color: var(--dark-color);
 }
 
@@ -513,7 +527,7 @@ input {
   border-radius: .35rem;
   border-bottom: 1px solid var(--border-color);
   margin-bottom: 2rem;
-  background: var(--clean-color) url(/alpha/tests/svg/icon-search.svg) no-repeat center right 12px/1.5rem;
+  background: var(--clean-color) url(./../svg/icon-search.svg) no-repeat center right 12px/1.25rem;
   outline: none;
 }
 
@@ -527,11 +541,11 @@ input {
 }
 
 .relevant.right-s {
-  background: url(//unsplash.it/350/450.peru) no-repeat calc(50% + -700px) center;
+  background: url(./../images/global/grafico.png) no-repeat calc(50% + -975px) center;
 }
 
 .relevant.left-s {
-  background: url(//unsplash.it/350/450.virus) no-repeat calc(50% + 700px) center;
+  background: url(./../images/global/grafico.png) no-repeat calc(50% + 975px) center;
 }
 
 .relevant {
@@ -596,7 +610,7 @@ input {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .feature__title {
@@ -774,19 +788,19 @@ address {
 }
 
 .footer__data:first-of-type ul::before {
-  background-image: url(https://ed.team/themes/custom/escueladigital/img/world.svg);
+  background-image: url(./../svg/world.svg);
 }
 
 .footer__data:nth-of-type(2) ul::before {
-  background-image: url(https://ed.team/themes/custom/escueladigital/img/email.svg);
+  background-image: url(./../svg/email.svg);
 }
 
 .footer__data:nth-of-type(3) ul::before {
-  background-image: url(https://ed.team/themes/custom/escueladigital/img/users.svg);
+  background-image: url(./../svg/users.svg);
 }
 
 .footer__data:last-of-type ul::before {
-  background-image: url(https://ed.team/themes/custom/escueladigital/img/fork.svg);
+  background-image: url(./../svg/fork.svg);
 }
 
 .rights {
@@ -799,6 +813,29 @@ address {
   max-width: 1344px;
   margin: 0 auto;
   padding: 15px;
+}
+
+.socials {
+  margin-top: 1rem;
+}
+
+.socials--footer a {
+  padding-right: .5rem;
+  font-size: 1.5rem;
+}
+
+.socials--footer a:hover path {
+  color: var(--second-color);
+}
+
+.footer--banner {
+  margin-bottom: 0;
+  background-color: #282d31;
+}
+
+.footer__logo {
+  margin-top: 200px;
+  width: 200px;
 }
 
 .video-demo {
@@ -831,7 +868,7 @@ form {
 }
 
 .feedback-input {
-  color: #000;
+  color: var(--dark-color);
   font-family: 'Raleway', 'Open Sans', sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -852,9 +889,9 @@ form {
 }
 
 textarea {
-  height: 150px;
   line-height: 150%;
   resize: vertical;
+  min-height: 150px;
 }
 
 [type="submit"]:hover {
@@ -886,4 +923,68 @@ input + .dual-button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.col-active {
+  flex-direction: column;
+}
+
+.form__logo {
+  width: 100%;
+  text-align: center;
+}
+
+.form__logo--hor {
+  width: 200px;
+}
+
+.wrapper-brand {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.wrapper-logo__title {
+  margin-top: 6rem;
+  position: relative;
+}
+
+.wrapper-logo__title h1 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 6rem;
+  z-index: var(--z-normal);
+}
+
+.naxtar,
+.devs {
+  padding: 2.3px 100px 2.3px 50px;
+}
+
+.naxtar {
+  background-color: #222;
+  margin-left: 100px;
+}
+
+.devs {
+  background-color: #222;
+}
+
+.naxtar:hover,
+.devs:hover {
+  background-color: var(--first-color);
+  color: var(--clean-color);
+}
+
+.wrapper-logo__image {
+  max-width: 500px;
+  position: relative;
+  z-index: var(--z-tooltip);
+}
+
+.logo__image {
+  position: absolute;
+  bottom: 15%;
+  left: 280px;
+  width: 250px;
 }

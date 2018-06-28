@@ -1,6 +1,7 @@
 .main-footer {
   background-color: #282d31;
   padding: 50px 0;
+  //margin-top: 6rem;
 }
 
 .main-footer > .nd-container {
@@ -51,19 +52,20 @@ address {
 }
 
 .footer__data:first-of-type ul::before {
-  background-image: url(https://ed.team/themes/custom/escueladigital/img/world.svg);
+  //background-image: url(/alpha/tests/svg/world.svg);
+  background-image: url(./../svg/world.svg);
 }
 
 .footer__data:nth-of-type(2) ul::before {
-  background-image: url(https://ed.team/themes/custom/escueladigital/img/email.svg);
+  background-image: url(./../svg/email.svg);
 }
 
 .footer__data:nth-of-type(3) ul::before {
-  background-image: url(https://ed.team/themes/custom/escueladigital/img/users.svg);
+  background-image: url(./../svg/users.svg);
 }
 
 .footer__data:last-of-type ul::before {
-  background-image: url(https://ed.team/themes/custom/escueladigital/img/fork.svg);
+  background-image: url(./../svg/fork.svg);
 }
 
 .rights {
@@ -76,4 +78,27 @@ address {
   max-width: 1344px;
   margin: 0 auto;
   padding: 15px;
+}
+
+.socials {
+  margin-top: 1rem;
+}
+
+.socials--footer a {
+  padding-right: .5rem;
+  font-size: 1.5rem;
+}
+
+.socials--footer a:hover path {
+  color: var(--second-color);
+}
+
+.footer--banner {
+  margin-bottom: 0;
+  background-color: #282d31;
+}
+
+.footer__logo {
+  margin-top: 200px;
+  width: 200px;
 }

@@ -1,16 +1,18 @@
 .relevant.right-s {
   background:
-          url(//unsplash.it/350/450.peru)
+          url(./../images/global/grafico.png)
+            //url(https://citysem.es/wp-content/uploads/2016/03/diseno-personalizado-300x300.png?x71854)
+          //url(//unsplash.it/350/450.peru)
           //url(http://via.placeholder.com/350x450)
           no-repeat
-          calc(50% + -700px) center;
+          calc(50% + -975px) center;
 }
 
 .relevant.left-s {
   background:
-          url(//unsplash.it/350/450.virus)
+          url(./../images/global/grafico.png)
           no-repeat
-          calc(50% + 700px) center;
+          calc(50% + 975px) center;
 }
 
 .relevant {
