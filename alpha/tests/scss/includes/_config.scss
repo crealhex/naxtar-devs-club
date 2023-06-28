@@ -1,0 +1,153 @@
+*,
+*::after,
+*::before {
+  font-family: 'Open sans', sans-serif;
+  box-sizing: border-box;
+  //font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  //font-weight: 600;
+  line-height: 1.4;
+}
+
+::selection {
+  color: var(--clean-color);
+  background-color: var(--second-color);
+}
+
+body {
+  margin-top: var(--header-height);
+  background-color: var(--body-bg);
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+}
+
+//img {
+//  margin: .1px;
+//}
+
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+  //color: var(--accent-color-alt);
+}
+
+a:hover {
+  color: var(--accent-color-alt);
+}
+
+.t2, .t3, .t4,
+h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: .01em;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.t1, h1 {
+  font-size: 2.25rem;
+}
+
+.t2, h2 {
+  font-size: 2rem;
+}
+
+h1+.subtitle, h2+.subtitle,
+h3+.subtitle, h4+.subtitle,
+h5+.subtitle, h6+.subtitle {
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 + .block-content {
+  margin-top: 50px;
+}
+
+.block-title {
+  display: block;
+  text-align: center;
+}
+
+.nd-container,
+.views-element-container {
+  display: flex;
+  max-width: var(--max-width);
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.nd-item {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nd-item.l-15,
+.l-15 {
+  width: 15%;
+}
+
+.nd-item.l-75,
+.l-17 {
+  width: 75%;
+}
+
+.nd-item.l-85,
+.l-85 {
+  width: 85%;
+}
+
+.no-padding.nd-container>.nd-item,
+.no-padding.nd-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.to-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+input {
+  line-height: 1.7;
+}
+
+@media (min-width: 1024px) {
+
+  .ed-item.l-50, .l-50 {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 1340px) {
+
+  .ed-item.m-80, .m-80 {
+    width: 90%;
+  }
+
+}
+
+.paragraph {
+  font-size: .875rem;
+  margin-bottom: 1rem;
+}
+
+.particle-block {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.particle-block--final {
+  margin-bottom: 6rem;
+}

@@ -1,0 +1,40 @@
+.consoles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+.feature__title {
+  font-weight: 600;
+}
+
+.feature__img {
+  margin-bottom: 20px;
+  width: 120px;
+  height: 75px;
+  background: url(https://ed.team/themes/custom/escueladigital/img/beneficios/profesores.svg) no-repeat 50%/contain;
+}
+
+.feature:nth-child(2) .feature__img {
+  background-image: url(https://ed.team/themes/custom/escueladigital/img/beneficios/desde-cero.svg);
+}
+
+.feature:nth-child(3) .feature__img {
+  background-image: url(https://ed.team/themes/custom/escueladigital/img/beneficios/proyecto-final.svg);
+}
+
+.feature:nth-child(4) .feature__img {
+  background-image: url(https://ed.team/themes/custom/escueladigital/img/beneficios/sin-mensualidades.svg);
+}
+
+.feature {
+  font-size: .8125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 13px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+}

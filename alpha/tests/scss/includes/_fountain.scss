@@ -1,0 +1,95 @@
+.fountain {
+  //margin: 50px auto;
+  //max-width: 1312px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.fountain__data {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.fountain__data a {
+  color: #fff;
+}
+
+.fountain .fountain__title h3 span:last-of-type {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  //margin-top: -1rem;
+  //line-height: 100%;
+  //margin: 0;
+  //letter-spacing: 1.5px;
+}
+
+.fountain__title span:nth-child(n) {
+  background-color: #222;
+}
+
+.fountain a img {
+  max-width: 100%;
+}
+
+.fountain__title {
+  position: absolute;
+  z-index: 0;
+  font-size: 1.5rem;
+}
+
+.top--right {
+  top: 0;
+  right: 0;
+  margin: 15px 20px;
+  text-align: right;
+}
+
+/*-----------------------------------*/
+
+.fountain__data.general {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.fountain__data.general > a img {
+  display: block;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.fountain__data.general > a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(255,255,255,0.15);
+  transition: all 0.4s ease;
+}
+
+.fountain__data.general:hover > a img {
+  transform: scale(1.05);
+}
+
+.fountain__data.general:hover > a:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+h2 + .fountain {
+  margin-top: 25px;
+  margin-bottom: 6rem;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ndevs",
+  "version": "1.0.0",
+  "description": "The first project of one of the most ambitious companies of all time.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crealhex/ndevs-project.git"
+  },
+  "keywords": [],
+  "author": "Luis Abraham Crealhex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crealhex/ndevs-project/issues"
+  },
+  "homepage": "https://github.com/crealhex/ndevs-project#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1"
+  }
+}

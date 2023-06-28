@@ -1,0 +1,86 @@
+.button,
+[class^="button"] {
+  background-color: var(--first-color);
+  color: var(--clean-color);
+  display: inline-block;
+  border-radius: 5px;
+  font-size: .95rem;
+  //padding: 12px 23px;
+  padding: 8px 16px;
+  text-align: center;
+  border: 2px solid var(--first-color);
+  transition: all .2s ease-out;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.coraza {
+  height: 500px;
+  width: 500px;
+}
+
+[class^="button"].center {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button:hover,
+[class^="button"]:hover {
+  background-color: var(--first-color-alt);
+  border-color: var(--first-color-alt);
+  color: var(--clean-color);
+}
+
+.button:active,
+[class^="button"]:active {
+  transform: scale(.97);
+}
+
+[class^="button"].selfish {
+  display: block;
+  width: 100%;
+}
+
+[class^="button"].big {
+  font-size: 1.25rem;
+  //padding: 20px 40px;
+}
+
+[class*="--small"] {
+  font-size: .875rem;
+  padding: 4px 8px;
+}
+
+[class*="--special"] {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+[class*="--special"]:hover {
+  background-color: var(--accent-color-alt);
+  border-color: var(--accent-color-alt);
+}
+
+[class*="--cta"] {
+  background-color: var(--second-color);
+  border-color: var(--second-color);
+}
+
+[class*="--cta"]:hover {
+  background-color: var(--second-color-alt);
+  border-color: var(--second-color-alt);
+}
+
+[class*="--ghost"] {
+  background-color: transparent;
+  color: var(--first-color);
+}
+
+[class*="--ghost--special"] {
+  color: var(--accent-color);
+}
+
+[class*="--ghost--cta"] {
+  color: var(--second-color);
+}

@@ -6,6 +6,7 @@ access_log
 error_log
 
 .idea/
+node_modules/
 
 ### PhpStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
