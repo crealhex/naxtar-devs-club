@@ -3,14 +3,14 @@ const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', ()=>
-    gulp.src('./alpha/tests/scss/*.scss')
+    gulp.src('./src/scss/*.scss')
         .pipe(sass({
             outputStyle: 'expanded'
         }))
         .pipe(autoprefixer({
             versions: 'last 2 versions'
         }))
-        .pipe(gulp.dest('./alpha/tests/css'))
+        .pipe(gulp.dest('./public/css'))
 );
 
 gulp.task('default', ()=> {

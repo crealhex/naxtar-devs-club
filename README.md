@@ -29,3 +29,8 @@ Hola, somos una comunidad de desarrolladores que desea apoyar al **open source c
     - Se incluyen los wireframes para el prototipo de la página web.
     - Se incluyen las primeras guías de estilo.
     - Estructura básica de la página principal creada en `tests/structure/index.html`.
+
+### 1.0.0-beta.1
+###### July 04, 2023
+
+- Actualización en la organización y distribución de carpetas del proyecto.
